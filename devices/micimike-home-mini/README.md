@@ -1,15 +1,36 @@
-# MiciMike Home Mini
+# MiciMike Home Mini DiP GEN1
 
-## Recorded result
+**Status:** Published / tested
 
-| Condition | End-to-end successes / attempts |
+The MiciMike Home Mini DiP GEN1 replaces the PCB in an original Google Home
+Mini while reusing its enclosure and speaker for Home Assistant voice use.
+
+## Benchmark results
+
+| Test | Result |
 |---|---:|
-| Quiet, 3.5 m | 5/5 |
-| Fan noise | 5/5 |
-| Own music | 5/5 |
+| Quiet, 1 m | 5/5 |
+| Quiet, 3–4 m | 5/5 |
+| Fan interference | 5/5 |
+| Competing YouTube speech | 3/5 |
+| Wake word during own music playback | 5/5 |
+| False wakes during 15 minutes | 0 |
+| Sophia single intent | Success |
+| Sophia dual intent | Success |
+| Sophia triple intent | Partial |
+| Barge-in | Inconsistent |
+| Continued conversation | Not reliably working |
 
-An end-to-end success requires activation, recognition, processing, and
-execution to complete.
+The ratios are end-to-end results unless a row explicitly measures only wake
+recognition. An end-to-end success requires activation, recognition, processing,
+and execution to complete.
+
+## Test observations
+
+- The background-speech test used the creator's own voice.
+- Barge-in could interrupt TTS but often failed to execute the following command.
+- Microphone performance was good under the tested conditions.
+- The original Google Home Mini hardware provided strong speaker audio.
 
 ## Recorded test metadata
 
@@ -19,14 +40,28 @@ execution to complete.
 | Home Assistant version | Not documented in the current public record |
 | Device firmware | Not documented in the current public record |
 | Wake word and engine | Not documented in the current public record |
-| STT / agent / TTS | Not documented in the current public record |
+| STT / agent / TTS | Sophia tests recorded; exact versions not documented |
 | Assist pipeline configuration | Not documented in the current public record |
 
-## Evidence and original project
+## Links and resources
 
-- [Bearded Tinker benchmark video](https://youtu.be/pB5rBzix3V0)
-- [MiciMike Home Mini product page](https://www.crowdsupply.com/micimike-rev-devices/micimike-home-mini-drop-in-pcb)
-- [Original GitHub project](https://github.com/iMike78/home-mini-v1-drop-in-pcb)
+### Video
 
-Results are practical observations under the recorded setup. See the shared
-[methodology](../../benchmarks/methodology.md) and [comparison caveats](../../benchmarks/comparison.md).
+- [YouTube review](https://youtu.be/pB5rBzix3V0)
+
+### Product
+
+- [Official MiciMike Home Mini DiP GEN1 page](https://www.micimike.com/gen1.html)
+- [MiciMike manufacturer website](https://micimike.com/)
+- Affiliate link: none confirmed
+
+### Testing
+
+- [Comparison table](../../benchmarks/comparison.md)
+- [Test methodology](../../benchmarks/methodology.md)
+
+## Affiliate disclosure
+
+No affiliate product link is currently listed for this device. Links marked as
+affiliate elsewhere in this repository may earn Bearded Tinker a small
+commission at no additional cost to you.
