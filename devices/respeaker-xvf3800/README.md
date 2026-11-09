@@ -48,7 +48,7 @@ execution.
 
 | Field | Value |
 |---|---|
-| Test date | Not documented in the current public record |
+| Test date | 2026-10-31 |
 | Home Assistant version | Not documented in the current public record |
 | Device firmware | Not documented in the current public record |
 | Wake word and engine | Not documented in the current public record |

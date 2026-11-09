@@ -41,9 +41,9 @@ execution to complete.
 | Test date | Not documented in the current public record |
 | Home Assistant version | Not documented in the current public record |
 | Device firmware | Not documented in the current public record |
-| Wake word and engine | Not documented in the current public record |
-| STT / agent / TTS | Sophia tests recorded; exact versions not documented |
-| Assist pipeline configuration | Not documented in the current public record |
+| Wake word and engine | `Okay Nabu` and `Hey Jarvis`; engine and version not confirmed |
+| STT / agent / TTS | `faster-whisper`; standard Home Assistant agent and Sophia NLU; exact versions and TTS not confirmed |
+| Assist pipeline configuration | Standard Home Assistant agent pipeline plus a second Sophia NLU pipeline; exact settings not confirmed |
 
 ## Links and resources
 
