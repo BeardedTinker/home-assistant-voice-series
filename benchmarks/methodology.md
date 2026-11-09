@@ -53,19 +53,22 @@ and use:
 
 > Okay Nabu, turn on the lights.
 
-Record wake detection, request-end detection, command execution, failures, and
-response latency for every attempt.
+Run five attempts. Record wake detection, request-end detection, command
+execution, failures, and response latency for every attempt.
 
 ### 3. Quiet command at 3.5 metres
 
-Repeat the same command and scoring procedure at approximately 3.5 m. Keep the
-room, device position, speaker direction, pipeline, and target action unchanged.
+Repeat the same command and scoring procedure for five attempts at approximately
+3.5 m. Keep the room, device position, speaker direction, pipeline, and target
+action unchanged.
 
 ### 4. Fan interference
 
-Place the fan approximately 1.5 m from the device, facing toward it. Repeat the
-same light command. Record the fan model or setting when known, its distance and
-orientation, the user-to-device distance, and the actual attempt denominator.
+Place the fan approximately 1.5 m from the device, facing toward it. Run five
+attempts with the same light command. Record the fan model or setting when known,
+its distance and orientation, and the user-to-device distance. If an additional
+series is needed, keep it separate and document why it was added; do not merge it
+silently into the five-attempt baseline.
 
 ### 5. Competing speech
 
@@ -104,21 +107,30 @@ latency to the beginning of the spoken answer.
 
 ### 9. Single-intent command
 
-Run the recorded Sophia NLU single-intent phrase. Store the exact spoken wording,
-expected action, actual action, and latency. Do not reconstruct missing wording
-after filming.
+Use the Sophia NLU single-intent phrase:
+
+> Hey Jarvis, what is the temperature in the Master Bedroom?
+
+Store the expected answer, actual answer, and latency.
 
 ### 10. Dual-intent command
 
-Issue the recorded two-command phrase as one utterance. Score each requested
-action separately and report the overall attempt as successful only when both
-actions complete.
+Use the Sophia NLU dual-intent phrase as one utterance:
+
+> Hey Jarvis, turn on the Master Bedroom light and tell me the temperature in the Master Bedroom.
+
+Score the light action and temperature answer separately. Report the overall
+attempt as successful only when both complete.
 
 ### 11. Triple-intent command
 
-Issue the recorded three-command phrase as one utterance. Score all three actions
-separately. Use `Partial` when only some actions complete; do not count it as a
-full end-to-end success.
+Use the Sophia NLU triple-intent phrase as one utterance:
+
+> Hey Jarvis, turn on the Master Bedroom light, tell me the temperature in the Master Bedroom, and tell me if the main door is open.
+
+Score the light action, temperature answer, and main-door answer separately. Use
+`Partial` when only some actions complete; do not count it as a full end-to-end
+success.
 
 ### 12. Barge-in
 
@@ -140,6 +152,29 @@ After a completed response, issue a follow-up request without repeating the wake
 word. Record the configured continued-conversation window, whether the follow-up
 was accepted, and whether it executed. Test each configured window separately;
 for example, 0.5, 5, and 10 seconds must remain distinct results.
+
+## Supplementary TTS audio test
+
+Use the same reference sentence at 25%, 50%, 75%, and 100% device volume:
+
+> The temperature in the master bedroom is 22 degrees, lights are on and the main door is closed.
+
+Record whether the complete sentence is audible and intelligible, along with
+clarity, distortion, clipping, missing words, and obvious volume inconsistencies.
+Keep the listener position, room, device placement, and TTS voice unchanged. This
+is a practical listening test, not a calibrated sound-pressure measurement.
+
+## Supplementary physical and recovery checks
+
+- **Physical mute:** operate the hardware mute control, confirm that voice input
+  is blocked, verify the visible state when available, then unmute and confirm
+  that normal voice operation returns.
+- **Indicators:** record expected LED or display behaviour during listening,
+  processing, speaking, muted, and idle states. Note indicators that remain on
+  after the functional session has ended.
+- **Recovery after an error:** after an observed timeout, stuck state, or failed
+  request, check whether the next wake word and command work. Record any manual
+  intervention, integration reload, device restart, or power cycle required.
 
 ## Response timer
 
