@@ -87,8 +87,16 @@ not combine close-source and reference-placement attempts into one score.
 ### 6. Own-music playback
 
 Play **Parni Valjak — Zastave** through the voice device's own speaker. While the
-track continues, use the wake word and issue the standard command. Record the
-device volume setting and score wake detection and command execution separately.
+track continues, use the wake word and issue the standard command.
+
+Run an initial series of five attempts. If the results are inconsistent or need
+confirmation, run one additional series of five attempts under the same
+conditions. Keep the two series separately documented. An overall result may
+also be shown, but it must explain why the additional series was performed and
+must not replace the individual series results.
+
+Record the device volume setting and score wake detection and command execution
+separately for every attempt.
 
 ### 7. False-wake observation
 
