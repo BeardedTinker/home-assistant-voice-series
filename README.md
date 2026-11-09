@@ -28,11 +28,10 @@ conclusions.
 | Order | Device or comparison | Status |
 |---:|---|---|
 | 1 | Home Assistant Voice Preview Edition | Next |
-| 2 | M5Stack comparison | Queued |
-| 3 | M5Stack Atom VoiceS3R | Planned |
-| 4 | ESP32-S3-BOX-3 | Planned |
-| 5 | Lumi / Waveshare | Planned |
-| 6 | FutureProofHomes Satellite1.1 | Planned |
+| 2 | M5Stack comparison, including Atom VoiceS3R | Queued |
+| 3 | ESP32-S3-BOX-3 | Planned |
+| 4 | Lumi / Waveshare | Planned |
+| 5 | FutureProofHomes Satellite1.1 | Planned |
 
 Device directories are added only when testing starts and there is verified
 material to publish.
