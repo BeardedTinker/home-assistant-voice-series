@@ -9,10 +9,10 @@ cause. Causes remain **Unconfirmed** until supported by reproducible evidence.
 
 ## Current observations
 
-| Device | Observed issue | Functional impact | Published result or evidence | Cause | Firmware in original test | Observation date | Reproduction record | Retest status |
+| Device | Observed issue | Functional impact | Published result or evidence | Cause | Firmware in original test | Observation date | Observed frequency / evidence | Retest status |
 |---|---|---|---|---|---|---|---|---|
 | [MiciMike Home Mini DiP GEN1](../devices/micimike-home-mini/README.md) | Unreliable barge-in | The current response could stop, but the new command often did not execute | Inconsistent barge-in | Unconfirmed | Not confirmed | Not documented | Not yet documented separately | Pending |
-| [Third Reality Voice & Music Assistant](../devices/thirdreality-voice-music/README.md) | Stuck `responding` state | Could block subsequent wake words and voice commands until intervention | Observed during the published test | Unconfirmed | Not confirmed | Not documented | Not yet documented separately | Pending |
+| [Third Reality Voice & Music Assistant](../devices/thirdreality-voice-music/README.md) | Stuck `responding` state | Could block subsequent wake words and voice commands until intervention | Observed during the published test | Unconfirmed | Not confirmed | Not documented | Recovery sometimes required mute/unmute or intervention through Home Assistant | Pending |
 | [Third Reality Voice & Music Assistant](../devices/thirdreality-voice-music/README.md) | Separation of user speech from the device's own music | Wake word was detected, but commands did not reliably complete | Wake 10/10; command execution 5/10 | Unconfirmed | Not confirmed | Not documented | 5 failures after successful wake detection | Pending |
 | [ReSpeaker XVF3800 + XIAO ESP32-S3](../devices/respeaker-xvf3800/README.md) | Stale LED indicator | LED could remain on, but voice commands continued to work | Voice session remained functional | Unconfirmed | Not confirmed | 2026-10-31 | Observed intermittently | Pending |
 | [ReSpeaker XVF3800 + XIAO ESP32-S3](../devices/respeaker-xvf3800/README.md) | Command processing during own-music playback | Most commands did not complete after or alongside wake detection | Wake 8/10; command execution 2/10 | Unconfirmed | Not confirmed | 2026-10-31 | Published 10-attempt series | Pending |

@@ -40,6 +40,7 @@ for verified project links and current preparation notes.
 
 - [Comparison and current results](benchmarks/comparison.md)
 - [Benchmark methodology](benchmarks/methodology.md)
+- [Known issues and firmware retest tracking](benchmarks/known-issues.md)
 - [Published series videos](https://youtu.be/kKDNd6tnFzE)
 
 ## Affiliate disclosure
