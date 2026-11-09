@@ -30,6 +30,9 @@ execution to complete.
 ## Test observations
 
 - The background-speech test used the creator's own voice.
+- The Sophia triple-intent result was partial: the first request to turn on the
+  light did not execute, while the temperature and main-door requests succeeded.
+  A speech-recognition problem required that segment to be recorded again.
 - Barge-in could interrupt TTS but often failed to execute the following command.
 - Microphone performance was good under the tested conditions.
 - The original Google Home Mini hardware provided strong speaker audio.

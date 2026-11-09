@@ -17,8 +17,8 @@ connections, a 3.5 mm output, and a speaker connector.
 | Quiet, 1 m | 5/5 |
 | Quiet, 3.5 m | 5/5 |
 | Fan interference | 3/10 |
-| Competing speech, close laptop | 0/5 commands |
-| Competing speech, reference placement | 5/5 commands |
+| Competing speech, laptop approximately 1 m from device | 0/5 commands |
+| Competing speech, laptop approximately 3 m from device | 5/5 commands |
 | Own music wake detected | 8/10 |
 | Own music command executed | 2/10 |
 | False wakes during 15 minutes | 0 |
@@ -31,14 +31,17 @@ connections, a 3.5 mm output, and a speaker connector.
 
 The own-music rows intentionally separate wake recognition from end-to-end
 success. A complete success requires activation, recognition, processing, and
-execution.
+execution. The wake word was detected on 8 of 10 attempts, but only 2 of 10
+commands executed; microphone count alone does not guarantee reliable separation
+and processing of speech over the device's own music.
 
 ## Test observations
 
 - The fan test was performed at approximately 3.5 m, with the fan approximately
   1.5 m from the device.
-- The LED ring occasionally remained illuminated after a command, but the device
-  continued accepting new commands; this was not confirmed as a stuck pipeline.
+- The LED ring occasionally remained illuminated after a command, but voice
+  functionality continued and the device accepted new commands. This was a stale
+  indicator, not a confirmed stuck voice session.
 - TTS at 25% was practically inaudible and 50% was very quiet.
 - TTS at 75% and 100% was clean and sounded good.
 - Microphone mute was not tested.

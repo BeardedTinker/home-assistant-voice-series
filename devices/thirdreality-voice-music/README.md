@@ -22,12 +22,13 @@ and 2.4 GHz Wi-Fi. The official listed price at filming was USD 69.99.
 | Sophia triple intent | Error |
 | Barge-in during thinking | Failed |
 | Barge-in during TTS | Failed |
-| Continued conversation | Failed |
+| Continued conversation, 0.5-second window | Failed |
+| Continued conversation, 5-second window | Failed |
+| Continued conversation, 10-second window | Failed |
 
 The own-music rows show that wake detection succeeded on every attempt while
 only half of the commands completed. Other ratios are end-to-end results unless
-a row explicitly names one pipeline stage. Continued conversation was tested at
-0.5, 5, and 10 seconds.
+a row explicitly names one pipeline stage.
 
 ## Test observations
 
@@ -36,8 +37,11 @@ a row explicitly names one pipeline stage. Continued conversation was tested at
 - The observed failures happened after wake detection: the device did not
   reliably detect the end of the user's request and separate the user's speech
   from its own competing music. The responsible firmware component is unconfirmed.
-- Occasional stuck responding states were observed and could prevent new commands.
-- Recovery sometimes required intervention; the firmware root cause was not confirmed.
+- Occasional stuck `responding` states were functional session failures, not only
+  stale LED indications. While stuck, the device could block subsequent wake
+  words and voice commands.
+- Recovery sometimes required intervention; the responsible firmware component
+  and root cause were not confirmed.
 - The built-in speaker was adequate for voice and casual radio.
 - The device has no standard 3.5 mm audio output.
 
