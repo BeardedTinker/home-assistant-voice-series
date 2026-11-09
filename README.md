@@ -10,18 +10,17 @@ third-party firmware, models, or documentation.
 
 ## Published benchmarks
 
-| Device | Quiet, 3.5 m | Fan noise | Own music | Device notes |
-|---|---:|---:|---:|---|
-| MiciMike Home Mini DiP GEN1 | 5/5 | 5/5 | 5/5 | [Results](devices/micimike-home-mini/README.md) |
-| Third Reality Voice & Music Assistant | 5/5 | 5/5 | ~5/10 | [Results](devices/thirdreality-voice-music/README.md) |
-| ReSpeaker XVF3800 + XIAO ESP32-S3 | 5/5 | 3/10 | 2/10 | [Results](devices/respeaker-xvf3800/README.md) |
+| Device | Quiet, 3.5 m | Fan noise | Own-music wake detected | Own-music command executed | Device notes |
+|---|---:|---:|---:|---:|---|
+| MiciMike Home Mini DiP GEN1 | 5/5 | 5/5 | 5/5 | 5/5 | [Results](devices/micimike-home-mini/README.md) |
+| Third Reality Voice & Music Assistant | 5/5 | 5/5 | 10/10 | 5/10 | [Results](devices/thirdreality-voice-music/README.md) |
+| ReSpeaker XVF3800 + XIAO ESP32-S3 | 5/5 | 3/10 | 8/10 | 2/10 | [Results](devices/respeaker-xvf3800/README.md) |
 
-Each ratio is an **end-to-end success rate**. An attempt counts as successful
-only when activation, recognition, processing, and execution all complete.
-These are not laboratory scores. `~` marks an approximate result reported from
-the published material. Conditions and configurations were not necessarily
-identical; read [the comparison notes](benchmarks/comparison.md) before drawing
-conclusions.
+Quiet, fan-noise, and command-execution ratios are **end-to-end success rates**:
+activation, recognition, processing, and execution must all complete. The
+own-music wake-detection column measures wake activation only. These are not
+laboratory scores. Conditions and configurations were not necessarily identical;
+read [the comparison notes](benchmarks/comparison.md) before drawing conclusions.
 
 ## Upcoming devices
 

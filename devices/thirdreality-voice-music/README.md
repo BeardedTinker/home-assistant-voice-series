@@ -14,7 +14,8 @@ and 2.4 GHz Wi-Fi. The official listed price at filming was USD 69.99.
 | Quiet, 3.5 m | 5/5 |
 | Fan interference | 5/5 |
 | Competing YouTube speech | 3/5 |
-| Wake word during own music playback | ~5/10 |
+| Wake word during own music playback | 10/10 |
+| Command execution during own music playback | 5/10 |
 | False wakes during 15 minutes | 0 |
 | Sophia single intent | Success |
 | Sophia dual intent | Partial |
@@ -23,10 +24,10 @@ and 2.4 GHz Wi-Fi. The official listed price at filming was USD 69.99.
 | Barge-in during TTS | Failed |
 | Continued conversation | Failed |
 
-`~` marks an approximate result from the published material rather than a raw
-attempt table. The ratios are end-to-end results unless a row explicitly
-measures only wake recognition. Continued conversation was tested at 0.5, 5,
-and 10 seconds.
+The own-music rows show that wake detection succeeded on every attempt while
+only half of the commands completed. Other ratios are end-to-end results unless
+a row explicitly names one pipeline stage. Continued conversation was tested at
+0.5, 5, and 10 seconds.
 
 ## Test observations
 

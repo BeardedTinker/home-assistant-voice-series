@@ -14,6 +14,7 @@ Mini while reusing its enclosure and speaker for Home Assistant voice use.
 | Fan interference | 5/5 |
 | Competing YouTube speech | 3/5 |
 | Wake word during own music playback | 5/5 |
+| Command execution during own music playback | 5/5 |
 | False wakes during 15 minutes | 0 |
 | Sophia single intent | Success |
 | Sophia dual intent | Success |
@@ -21,9 +22,10 @@ Mini while reusing its enclosure and speaker for Home Assistant voice use.
 | Barge-in | Inconsistent |
 | Continued conversation | Not reliably working |
 
-The ratios are end-to-end results unless a row explicitly measures only wake
-recognition. An end-to-end success requires activation, recognition, processing,
-and execution to complete.
+The own-music rows separate wake detection from completed command execution.
+Other ratios are end-to-end results unless a row explicitly names one pipeline
+stage. An end-to-end success requires activation, recognition, processing, and
+execution to complete.
 
 ## Test observations
 

@@ -19,8 +19,8 @@ connections, a 3.5 mm output, and a speaker connector.
 | Fan interference | 3/10 |
 | Competing speech, close laptop | 0/5 commands |
 | Competing speech, reference placement | 5/5 commands |
-| Own music wake recognition | 8/10 |
-| Own music end-to-end command execution | 2/10 |
+| Own music wake detected | 8/10 |
+| Own music command executed | 2/10 |
 | False wakes during 15 minutes | 0 |
 | Sophia single intent | Success |
 | Sophia dual intent | Success |

@@ -2,21 +2,21 @@
 
 ## Current published results
 
-| Device | Quiet, 3.5 m | Fan noise | Own music |
-|---|---:|---:|---:|
-| MiciMike Home Mini | 5/5 | 5/5 | 5/5 |
-| Third Reality Voice & Music Assistant | 5/5 | 5/5 | ~5/10 |
-| ReSpeaker XVF3800 | 5/5 | 3/10 | 2/10 |
+| Device | Quiet, 3.5 m | Fan noise | Own-music wake detected | Own-music command executed |
+|---|---:|---:|---:|---:|
+| MiciMike Home Mini | 5/5 | 5/5 | 5/5 | 5/5 |
+| Third Reality Voice & Music Assistant | 5/5 | 5/5 | 10/10 | 5/10 |
+| ReSpeaker XVF3800 | 5/5 | 3/10 | 8/10 | 2/10 |
 
-These values are end-to-end successful attempts over all recorded attempts. A
-success requires the complete chain: wake-word activation, speech recognition,
-pipeline processing, and execution of the requested action or response. A
-failure at any stage is a failed attempt.
+Quiet, fan-noise, and command-execution values are end-to-end successful attempts
+over all recorded attempts. A success requires the complete chain: wake-word
+activation, speech recognition, pipeline processing, and execution of the
+requested action or response. A failure at any stage is a failed attempt.
 
-The ratios are not normalized scores. An approximate value is explicitly marked
-with `~` and should not be treated as raw laboratory data. Individual pipeline
-stages may be reported as additional diagnostics when they were recorded, but
-they do not replace the end-to-end result.
+The own-music wake-detection column measures activation only, before command
+processing and execution. Keeping it separate shows whether failures occurred at
+the wake stage or later in the pipeline. The ratios are not normalized scores or
+laboratory data.
 
 ## Interpretation
 
