@@ -16,10 +16,26 @@ third-party firmware, models, or documentation.
 | Third Reality Voice & Music Assistant | 5/5 | 5/5 | ~5/10 | [Results](devices/thirdreality-voice-music/README.md) |
 | ReSpeaker XVF3800 | 5/5 | 3/10 | 2/10 | [Results](devices/respeaker-xvf3800/README.md) |
 
-Values are successful activations or commands divided by recorded attempts, not
-laboratory scores. `~` marks an approximate result reported from the published
-material. Conditions and configurations were not necessarily identical; read
-[the comparison notes](benchmarks/comparison.md) before drawing conclusions.
+Each ratio is an **end-to-end success rate**. An attempt counts as successful
+only when activation, recognition, processing, and execution all complete.
+These are not laboratory scores. `~` marks an approximate result reported from
+the published material. Conditions and configurations were not necessarily
+identical; read [the comparison notes](benchmarks/comparison.md) before drawing
+conclusions.
+
+## Upcoming devices
+
+| Order | Device or comparison | Status |
+|---:|---|---|
+| 1 | Home Assistant Voice Preview Edition | Next |
+| 2 | M5Stack comparison | Queued |
+| 3 | M5Stack Atom VoiceS3R | Planned |
+| 4 | ESP32-S3-BOX-3 | Planned |
+| 5 | Lumi / Waveshare | Planned |
+| 6 | FutureProofHomes Satellite1.1 | Planned |
+
+Device directories are added only when testing starts and there is verified
+material to publish.
 
 ## Start here
 
