@@ -1,0 +1,55 @@
+name: Benchmark result or correction
+description: Submit a reproducible result or correct published benchmark data
+title: "[Result]: "
+labels: [benchmark]
+body:
+  - type: markdown
+    attributes:
+      value: Read benchmarks/methodology.md before submitting. Never include credentials, serial numbers, IP addresses, or private identifiers.
+  - type: dropdown
+    id: submission_type
+    attributes:
+      label: Submission type
+      options:
+        - New benchmark result
+        - Correction to published data
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device and hardware revision
+    validations:
+      required: true
+  - type: textarea
+    id: software
+    attributes:
+      label: Firmware and Assist pipeline
+      description: Include relevant versions, wake word, STT, agent, and TTS.
+    validations:
+      required: true
+  - type: textarea
+    id: conditions
+    attributes:
+      label: Test conditions
+      description: Room, placement, distance, noise source, command set, and attempt count.
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: Complete results
+      description: Include failures and retries; do not report only the best attempt.
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Public evidence link
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I removed credentials and private identifiers and followed the repository methodology.
+          required: true

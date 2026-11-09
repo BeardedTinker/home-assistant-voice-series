@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General Home Assistant support
+    url: https://www.home-assistant.io/help/
+    about: Use Home Assistant support channels for general troubleshooting.
