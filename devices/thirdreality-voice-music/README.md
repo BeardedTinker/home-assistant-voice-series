@@ -31,7 +31,11 @@ a row explicitly names one pipeline stage. Continued conversation was tested at
 
 ## Test observations
 
-- Voice activation during music playback was unreliable.
+- During own-music playback, wake-word detection succeeded on all 10 attempts,
+  but only 5 of 10 commands executed successfully.
+- The observed failures happened after wake detection: the device did not
+  reliably detect the end of the user's request and separate the user's speech
+  from its own competing music. The responsible firmware component is unconfirmed.
 - Occasional stuck responding states were observed and could prevent new commands.
 - Recovery sometimes required intervention; the firmware root cause was not confirmed.
 - The built-in speaker was adequate for voice and casual radio.
